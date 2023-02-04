@@ -11,9 +11,25 @@ console.log("Value assigned to decimal is: "+ decimal);
 let fullName: string = "Azeem Joko";
 console.log("Hi my full name is: "+ fullName);
 
-//Array
-let list: number[] = [1,2,3];
-console.log("The value of the list is: "+ list);
+//array
+let list: number[] = [1, 2, 3];
+for(let i = 0; i < list.length;i++){
+console.log("Number "+(i+1)+" is: "+list[i]+".");
+
+//enum
+enum Color {Red = 1, Green, Blue}
+let colorName: string = Color[2];
+let c: Color = Color.Green;
+console.log("Enum: Value of colorName is: "+colorName);
+console.log("Enum: Value of c is: "+c);
+console.log("Enum: Name of c is: " + Color[c]);
+
+//tuple
+let x: [string, number];
+x = ["hello", 10];
+console.log("Tuple example: "+x[0].substr(1))
+
+
 
 
 
